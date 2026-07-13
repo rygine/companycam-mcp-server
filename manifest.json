@@ -1,0 +1,42 @@
+{
+  "manifest_version": "0.4",
+  "name": "companycam-mcp-server",
+  "version": "0.0.0",
+  "description": "CompanyCam Core API (v2) — 62 tools generated from CompanyCam's OpenAPI definitions.",
+  "author": {
+    "name": "Ry Racherbaumer"
+  },
+  "server": {
+    "type": "node",
+    "entry_point": "server/index.js",
+    "mcp_config": {
+      "command": "node",
+      "args": ["${__dirname}/server/index.js", "--stdio"],
+      "env": {
+        "COMPANYCAM_API_TOKEN": "${user_config.api_token}",
+        "COMPANYCAM_USER_EMAIL": "${user_config.user_email}"
+      }
+    }
+  },
+  "user_config": {
+    "api_token": {
+      "type": "string",
+      "title": "CompanyCam API Token",
+      "description": "From the CompanyCam web app: company settings → API/Access Tokens. Requires a Pro, Premium, or Elite plan.",
+      "required": true,
+      "sensitive": true
+    },
+    "user_email": {
+      "type": "string",
+      "title": "CompanyCam User Email (optional)",
+      "description": "Attributes created records to this CompanyCam user via the X-CompanyCam-User header. Leave blank to omit.",
+      "required": false
+    }
+  },
+  "compatibility": {
+    "platforms": ["darwin", "win32"],
+    "runtimes": {
+      "node": ">=18.0.0"
+    }
+  }
+}

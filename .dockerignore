@@ -1,0 +1,14 @@
+node_modules
+dist
+dist-bundle
+.yarn/cache
+.yarn/install-state.gz
+.git
+.gitignore
+.dev.vars
+.env
+.vscode
+.DS_Store
+README.md
+Dockerfile
+.dockerignore

@@ -1,0 +1,20 @@
+name = "companycam-mcp"
+main = "src/worker.ts"
+compatibility_date = "2025-01-01"
+compatibility_flags = ["nodejs_compat"]
+
+# OAuth token/grant/client storage. Create with:
+#   wrangler kv namespace create OAUTH_KV
+# then paste the returned id below.
+[[kv_namespaces]]
+binding = "OAUTH_KV"
+id = "REPLACE_WITH_KV_NAMESPACE_ID"
+
+# Secrets (set with `wrangler secret put <NAME>`), not committed:
+#   COMPANYCAM_API_TOKEN   (required)
+#   MCP_AUTH_TOKEN         (required — owner approval secret for the consent screen)
+#
+# Non-sensitive defaults can go here instead:
+# [vars]
+# MCP_PATH = "/mcp"
+# COMPANYCAM_USER_EMAIL = "you@example.com"
