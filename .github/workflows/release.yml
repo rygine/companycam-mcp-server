@@ -8,7 +8,12 @@ permissions:
   contents: write
 
 jobs:
+  # Run the full lint/format/typecheck/build suite; the release is gated on it.
+  quality:
+    uses: ./.github/workflows/quality.yml
+
   check:
+    needs: quality
     runs-on: ubuntu-latest
     outputs:
       version: ${{ steps.version.outputs.version }}
