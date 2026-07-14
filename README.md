@@ -308,3 +308,9 @@ If CompanyCam changes the API, update `src/tools/openapi.json` and re-run. The c
 | `yarn format`        | oxfmt                                                            |
 
 The Node code (`@types/node`) and the Worker code (`@cloudflare/workers-types`) use conflicting globals, so they type-check under separate tsconfigs — `tsconfig.json` excludes `src/worker.ts` and `src/oauth/`, which `tsconfig.worker.json` covers.
+
+## Disclaimer
+
+This project is an independent, unofficial tool and is not affiliated with,
+endorsed by, or sponsored by CompanyCam. All product names, trademarks, and
+registered trademarks are the property of their respective owners.

@@ -1,6 +1,6 @@
 {
   "name": "companycam-mcp-server",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "MCP server exposing the CompanyCam API",
   "type": "module",
   "main": "dist/index.js",
