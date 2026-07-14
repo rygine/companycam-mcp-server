@@ -1,7 +1,7 @@
 {
   "name": "companycam-mcp-server",
-  "version": "0.0.1",
-  "description": "MCP server exposing the full CompanyCam Core API (v2) — 62 tools generated from CompanyCam's OpenAPI definitions. Usable as a Claude custom connector.",
+  "version": "0.0.2",
+  "description": "MCP server exposing the CompanyCam API",
   "type": "module",
   "main": "dist/index.js",
   "scripts": {

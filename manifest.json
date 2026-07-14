@@ -1,8 +1,8 @@
 {
   "manifest_version": "0.4",
-  "name": "companycam-mcp-server",
+  "name": "CompanyCam API",
   "version": "0.0.0",
-  "description": "CompanyCam Core API (v2) — 62 tools generated from CompanyCam's OpenAPI definitions.",
+  "description": "MCP connector for the CompanyCam API",
   "author": {
     "name": "Ry Racherbaumer"
   },
@@ -21,8 +21,8 @@
   "user_config": {
     "api_token": {
       "type": "string",
-      "title": "CompanyCam API Token",
-      "description": "From the CompanyCam web app: company settings → API/Access Tokens. Requires a Pro, Premium, or Elite plan.",
+      "title": "CompanyCam Access Token",
+      "description": "Token for accessing the CompanyCam API. Requires a Pro, Premium, or Elite plan.",
       "required": true,
       "sensitive": true
     },

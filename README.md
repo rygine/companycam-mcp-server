@@ -91,6 +91,14 @@ The bundle runs the server **locally** on that machine (stdio), so no hosting or
 OAuth is involved. To build the `.mcpb` yourself, run `yarn bundle` (output:
 `companycam-mcp-server-<version>.mcpb`).
 
+### Install from the Extensions settings page
+
+If you're having trouble double-clicking on the `.mcpb` file to install the MCP bundle, you can manually install the extension by dragging the `.mcpb` bundle onto the Extensions settings page.
+
+### Network access
+
+You may need to add the CompanyCam domain to the network egress allowlist under Capabilities settings. Add `*.companycam.com` to the allowlist to enable all calls to the API.
+
 ---
 
 ## Option A — Cloudflare Workers + OAuth (recommended for Claude Desktop)
